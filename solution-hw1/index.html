@@ -1,15 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-  <meta charset="UTF-8">
-  <title>Page Title</title>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css"/>
+    <title>Product Gallery</title>
+  </head>
   
   <body>
+    <img class="logo" src="/assets/logo/logo-01.svg"/>
+    <hr>
+    <nav>
+      <a href="index.html">PRODUCT</a>
+      <a href="cart.html">CART</a>
 
-    <h1>I am the solution to HW1!</h1>
-
-    <p>
-        And I can link to <a href="./otherpage.html">other pages.</a>
-    </p>
+    <main>
+      <h1>Our hand-made cinnamon rolls</h1>
+      <div>
+        <a href="product-detail.html">
+          <div class="product-container">
+            <img class="product-img" 
+            src="/assets/products/original-cinnamon-roll.jpg"
+            alt="Original cinnamon roll">
+            <p>Original cinnamon roll</p>
+            <p>$2.49</p>
+          </div>
+        </a>
+        <a href="product-detail.html">
+          <div class="product-container">
+            <img class="product-img" 
+            src="/assets/products/apple-cinnamon-roll.jpg"
+            alt="Apple cinnamon roll">
+            <p>Apple cinnamon roll</p>
+            <p>$3.49</p>
+          </div>
+        </a>
+      </div>
+    </main>
 
   </body>
 </html>
