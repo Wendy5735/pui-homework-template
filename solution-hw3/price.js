@@ -69,7 +69,8 @@ function packSizeChange(element) {
 
 function updatePrice(glazingPrice, packPrice) {
   const finalPrice = (basePrice + glazingPrice) * packPrice;
-  document.querySelector(".footer-price").innerText = "$ " + finalPrice.toFixed(2);
+  document.querySelector(".footer-price").innerText = 
+      "$ " + finalPrice.toFixed(2);
 }
 
 populateOptions();
