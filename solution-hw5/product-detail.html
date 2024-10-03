@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css"/>
+    <title>Product Detail</title>
+    
+    <script defer src="rollsData.js"></script>
+    <script defer src="price.js"></script>
+  </head>
+  
+  <body>
+    <div class="header">
+      <a href="index.html">
+        <img class="logo" src="../assets/logo/logo-01.svg"
+        alt="Logo"/>
+      </a>
+
+      <div class="header-right">
+        <nav>
+            <a href="index.html"><mark>PRODUCT</mark></a>
+            <a href="cart.html">CART</a>
+        </nav>
+        <hr>
+        <h1 id="roll-header">Original cinnamon rolls</h1>
+      </div>
+    </div>
+
+    <main class="product-detail">
+      <img class="productdetail-img" 
+        src=""/>
+
+      <div class="productdetails-container">
+        <div class="customize-text">
+          <p>
+            Customize our delicious, hand-made cinnamon roll to your liking!
+          </p>
+          <label for="glazing">Glazing:</label>
+          <select id="glazing" class="options" 
+              onchange="glazingChange(this)">
+          </select>
+          
+          <label for="packsize">Pack size:</label>
+          <select id="packsize" class="options" 
+              onchange="packSizeChange(this)">
+          </select>
+        </div>
+          
+        <div class="footer">
+          <div class="footer-price"></div>
+          <button class="btn" id="add-to-cart">Add to Cart</button>
+        </div>
+
+      </div>
+    </main>
+  </body>
+</html>
+      
