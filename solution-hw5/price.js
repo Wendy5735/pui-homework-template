@@ -158,6 +158,7 @@ function updateTotalPrice() {
   total.innerText = "$ " + totalPrice.toFixed(2);
 }
 
+//Function to remove items from the cart
 function deleteItem(item) {
   const calculatedPrice = calculatePrice(item.basePrice, 
     glazingOptions[item.glazing], 
@@ -184,7 +185,6 @@ const rollFour = addNewRoll("Apple", "Keep original", "3", 3.49);
 //create the pre-written four items in shopping cart
 if (window.location.pathname.includes('/cart.html')) {
   for (const item of cart) {
-    console.log(item);
     createElement(item);
   }
 }
