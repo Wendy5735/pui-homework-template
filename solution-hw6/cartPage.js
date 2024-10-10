@@ -88,7 +88,6 @@ function deleteItem(item, index) {
   // remove the item DOM object from the UI
   item.element.remove();
   // remove the actual item object from the cart set
-
   cart.splice(index, 1);
 
   saveToLocalStorage();
