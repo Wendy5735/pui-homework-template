@@ -7,4 +7,4 @@
 # FP1 - Proposal for Critique
 
 ## Idea 1: 
-![screenshot](../final-project/Images/IMG_0457 2.jpg)
+![Alt text](<Images/IMG_0457 2.jpg>)
