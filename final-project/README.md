@@ -1,7 +1,111 @@
 # FP4 - Final Project Writeup
 
 
-# FP2 - Evaluation of the Final project
+
+# **FP2 \- Evaluation of the Final project**
+
+## Project Description
+
+My motivation for this project is to create a clear, engaging portfolio website that effectively showcases my design work and personal profile. This website will use a vertical scroll format. The goal is to offer potential collaborators and employers an easy and interesting way to explore my work and learn more about my background and skills.
+
+## High-Fi Prototypes
+
+### *Prototype 1*
+
+![Project Page](Images/Prototype1.png)
+
+The left image is the landing page, which showcases a brief of each project. The users interacts by scrolling on the trackpad, which switch to the next or previous project. The right image shows a project detail page, once the user clicks "read". 
+
+User feedback: There is a lack of clear signifiers or affordances for exiting a project. Additionally, they expressed confusion about how to interact with the project pages, whether to use arrows, scroll, or another method to navigate through projects. 
+
+
+### *Prototype 2*
+
+![Profile Page](Images/Prototype2.png)
+
+This prototype shows my profile page. It outlines my experiences and provides a place to look at all the projects I've done. 
+
+User feedback: For the profile page, participants recommended adding more interactive elements to enhance engagement and make the content more dynamic. 
+
+## Usability Test
+
+I conducted my usability test with 2 participants, who were asked to perform tasks such as exploring projects, delving into a specific project, and finding my profile, while using a think-aloud approach to share their thoughts.
+
+In summary, the feedback I received during the usability test highlighted a few key areas for improvement: the lack of affordances for exiting individual project pages, confusion over how to interact with the project pages, and the need for more interactive elements on the profile page. To address these points, I first added a "scroll" indicator on the side of the project pages to inform users that they can scroll to explore additional content. I also included a "back" icon on the project detail pages, making it clear how to exit a project and return to the main gallery.
+
+For the profile page, I incorporated more interactive hover effects to make the experience more engaging. In the Experience section, for instance, hovering over each role reveals specific tasks, allowing users to discover detailed information intuitively. 
+
+
+## Updated Designs
+
+![Updated Design 1](Images/updatedDesign1.png)
+![Updated Design 2](Images/updatedDesign2.png)
+
+In the project page and project detail page, "scroll" indicator and "back" icon were added. In the profile page, two hovering effects were added: the hovering effect for Experience section reveals more information, and the hovering effect for Projects section allows one project card to come to the front while fading out other cards.
+
+
+## Feedback Summary
+
+
+The feedback I got from group evaluation are as below:
+- the website jumps directly into the project section without a personal introduction, making it feel less welcoming?
+- Add more personal elements (an introduction, more interaction, etc)
+- Think about another way to layout the projects in profile page
+- “Scroll” visual hint is hard to see
+- In the profile page, grey and black interface doesn’t create a lot of contrast - maybe experiment with color shades like you have on project title page
+
+To address these points, I decided to add an introductory section labeled "00/05" on the project page to offer visitors a quick overview of who I am. The feedback on revising the layout for the projects in the profile page may not significantly influence my design, as I’m interested in experimenting with stacking cards. However, I plan to increase the spacing to reveal more of each card. I will also refine the scroll visual hint to make it more prominent, ensuring users recognize how to navigate. Lastly, I may incorporate a gradient effect into the profile page to create a more cohesive look.
+
+## Milestones
+
+Outline weekly milestones to plan your expected implementation progress until the end of the semester (\~300 words). 
+
+### *Implementation Plan*
+
+- [X] Week 9 Oct 28 \- Nov 1:
+  - [X] FP1 due
+  - [X] Finish FP2 Writeup
+  
+- [ ] Week 10 Nov 4 \- Nov 8:   
+  - [ ] FP2 due
+  - [ ] Implement gradient animation background
+
+- [ ] Week 11 Nov 11 \- Nov 15: 
+  - [ ] FP3 check-in
+  - [ ] Implement HTML structure for all pages
+- [ ] Week 12 Nov 18 \- Nov 22:   
+  - [ ]
+- [ ] Week 13 Nov 25 \- Nov 29:  
+
+  - [ ] Thanksgiving  
+- [ ] Week 14 Dec 2 \- Dec 6:  
+  - [ ] FP4 due 
+
+### *Libraries and Other Components*
+
+List the JS libraries and other components (if applicable) that you plan to use. 
+* 
+
+
+## Generative AI Use Plan
+
+Outline how you plan to use Generative AI tools to aid in the implementation (\~300 words).
+
+### *Tool Use*
+
+ What would you use? Edit the list given your plan. For each tool, explain briefly on what do you expect Generative AI to help you with and what might it not be able to help you with.
+
+* ChatGPT  
+  * I will use it for … because it can help me …  
+  * I will not use it for … because it might not be able to help me with …   
+* GitHub Copilot  
+* ...
+
+### *Responsible Use*
+
+How would you use Generative AI responsibly? 
+
+---
 
 
 # FP1 - Proposal for Critique

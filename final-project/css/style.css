@@ -1,0 +1,66 @@
+body {
+    font-family: Helvetica Neue, sans-serif;
+}
+
+.container-project-page {
+  background:  #9ec4c2;
+  height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+header .logo {
+    font-size: 40px; 
+    font-weight: lighter;
+}
+
+header nav a {
+    margin-left: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+nav a.active {
+    text-decoration: underline;
+    text-underline-offset: 8px;
+}
+
+.center-content h1 {
+    font-size: 50px;
+    font-weight: 400;
+    margin-top:10%;
+}
+
+.center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+.center-content p {
+  max-width: 400px;
+  font-size: 14px;
+  margin: 10px 0 20px;
+  line-height: 1.4;
+  text-align: left;
+}
+
+.view-button {
+  margin-top: 80px;
+}
+.view-text {
+  font-size: 14px;
+  font-weight: 200;
+  margin-bottom: 10px;
+}
+
+.view-button-img {
+  width: 50px;
+}
