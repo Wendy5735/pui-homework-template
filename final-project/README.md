@@ -54,7 +54,7 @@ The feedback I got from group evaluation are as below:
 - “Scroll” visual hint is hard to see
 - In the profile page, grey and black interface doesn’t create a lot of contrast - maybe experiment with color shades like you have on project title page
 
-To address these points, I decided to add an introductory section labeled "00/05" on the project page to offer visitors a quick overview of who I am. The feedback on revising the layout for the projects in the profile page may not significantly influence my design, as I’m interested in experimenting with stacking cards. However, I plan to increase the spacing to reveal more of each card. I will also refine the scroll visual hint to make it more prominent, ensuring users recognize how to navigate. Lastly, I may incorporate a gradient effect into the profile page to create a more cohesive look.
+To address these points, I might add an introductory section labeled "00/05" on the project page to offer visitors a quick overview of who I am. The feedback on revising the layout for the projects in the profile page may not significantly influence my design, as I’m interested in experimenting with stacking cards. However, I plan to increase the spacing to reveal more of each card. I will also refine the scroll visual hint to make it more prominent, ensuring users recognize how to navigate. Lastly, I may incorporate a gradient effect into the profile page to create a more cohesive look.
 
 ## Milestones
 
@@ -68,15 +68,18 @@ Outline weekly milestones to plan your expected implementation progress until th
   
 - [ ] Week 10 Nov 4 \- Nov 8:   
   - [ ] FP2 due
+  - [ ] Basic HTML/css structure for the Project Page
   - [ ] Implement gradient animation background
+  - [ ] Explore page transition using scrolling
 
 - [ ] Week 11 Nov 11 \- Nov 15: 
+  - [ ] Implement HTML/css for all pages (project detail pages + profile page)
+  - [ ] Connect each Project Page with their specific project detail page
   - [ ] FP3 check-in
-  - [ ] Implement HTML structure for all pages
 - [ ] Week 12 Nov 18 \- Nov 22:   
-  - [ ]
-- [ ] Week 13 Nov 25 \- Nov 29:  
-
+  - [ ] Implement JS for all pages
+- [ ] Week 13 Nov 25 \- Nov 29: 
+  - [ ] Use GSAP to add animation
   - [ ] Thanksgiving  
 - [ ] Week 14 Dec 2 \- Dec 6:  
   - [ ] FP4 due 
@@ -84,7 +87,9 @@ Outline weekly milestones to plan your expected implementation progress until th
 ### *Libraries and Other Components*
 
 List the JS libraries and other components (if applicable) that you plan to use. 
-* 
+* GSAP
+* Motion One
+* An animated gradient background library
 
 
 ## Generative AI Use Plan
@@ -96,14 +101,16 @@ Outline how you plan to use Generative AI tools to aid in the implementation (\~
  What would you use? Edit the list given your plan. For each tool, explain briefly on what do you expect Generative AI to help you with and what might it not be able to help you with.
 
 * ChatGPT  
-  * I will use it for … because it can help me …  
-  * I will not use it for … because it might not be able to help me with …   
+  * I plan to use ChatGPT to help troubleshoot JavaScript issues, help in my debugging process, and explain unfamiliar concepts or libraries. ChatGPT’s ability to quickly generate, modify, and explain code snippets can save me time, especially during debugging or when exploring complex design approaches. 
+  * I will not rely on ChatGPT for general coding; I will do all coding manually because this approach allows me to build a deeper understanding of the code and strengthens my skills. Coding manually also allows me to better understand potential issues and how to troubleshoot them, as I am directly engaged with every line of code. So I will avoid relying on it for direct code generation and copy pasting.
 * GitHub Copilot  
-* ...
+  * I will not use GitHub Copilot because I don't have it.
 
 ### *Responsible Use*
 
 How would you use Generative AI responsibly? 
+
+To use Generative AI responsibly, I will verify and understand all generated code, making sure that it functions as expected and meets my project’s specific requirements. I’ll check AI-generated content very carefully, fact-checking any explanations or suggestions it provides to avoid misinformation. I’ll use these tools as assistants rather than as sole sources of truth. Additionally, I’ll document any places where I use Generative AI in my code comments.
 
 ---
 
