@@ -1,0 +1,96 @@
+body {
+    overflow: auto;
+}
+
+.profile-container {
+    margin: 50px 18% 0 18%; 
+}
+
+.intro-section {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    margin-bottom: 100px;
+}
+
+.intro-text h1{
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.profile-image {
+    width: 300px;
+}
+
+.experience-section {
+    display: flex;
+    gap: 150px;
+    margin-bottom: 150px;
+}
+
+.section-title {
+    font-size: 20px;
+    width: 100px;
+}
+.experience-list {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.experience-item {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #000000;
+}
+
+.projects-section {
+    display: flex;
+    gap: 150px;
+    margin-bottom: 600px;
+}
+
+.projects-cards {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card {
+    width: 375px;
+    height: 250px;
+    background-color: #dcdcdc;
+    position: absolute;
+    border: 1px solid #000000;
+}
+
+.project-card:nth-child(1) {
+    top: 0;
+    left: 0;
+}
+
+.project-card:nth-child(2) {
+    top: 150px; /* Offset vertically */
+    left: 110px; /* Offset horizontally */
+}
+
+.project-card:nth-child(3) {
+    top: 300px;
+    left: 220px;
+}
+
+.project-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.projects-cards .project-card .project-number {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}

@@ -87,9 +87,9 @@ nav a.active {
 }
 
 .center-content h1 {
-    font-size: 50px;
+    font-size: 60px;
     font-weight: 400;
-    margin-top:10%;
+    margin-top:12%;
 }
 
 .center-content {
@@ -126,12 +126,17 @@ nav a.active {
   position: absolute;
   left: 4%;
   bottom: 8%;
+  width: 250px;
+  height: 250px;
 }
 
 .circle-img img{
-  width: 250px;
-  height: 250px;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .pagination {
@@ -145,6 +150,7 @@ nav a.active {
 
 .pagination img {
   width: 40px;
+  cursor: pointer;
 }
 
 .pagination .current-num {
