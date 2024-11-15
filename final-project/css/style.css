@@ -12,7 +12,7 @@ body {
   height: 100vh;
   width: 100%;
   z-index: -1;   
-  background: linear-gradient(80deg, rgb(121, 150, 184), rgb(208, 211, 214));
+  background: linear-gradient(80deg, rgb(182, 201, 222), rgb(208, 211, 214));
 }
 
 .project-page {
@@ -26,7 +26,7 @@ body {
     height: 800px;
     width: 800px;
     border-radius: 50%;
-    background-image: linear-gradient(80deg, rgb(106, 141, 155), rgba(82, 94, 101, 0.5));
+    background-image: linear-gradient(80deg, rgb(106, 141, 155), rgba(176, 201, 215, 0.5));
     filter: blur(80px);
     animation: down 30s infinite;
 }
@@ -37,7 +37,7 @@ body {
     height: 500px;
     width: 500px;
     border-radius: 50%;
-    background-image: linear-gradient(80deg, rgba(222, 238, 244, 0.8), rgb(90, 99, 140));
+    background-image: linear-gradient(80deg, rgba(222, 238, 244, 0.8), rgb(112, 122, 166));
     filter: blur(80px);
     animation: up 20s infinite;
 }
@@ -47,7 +47,7 @@ body {
     height: 500px;
     width: 500px;
     border-radius: 50%;
-    background-image: linear-gradient(80deg, rgb(139, 142, 172), rgba(195, 228, 229, 0.8));
+    background-image: linear-gradient(80deg, rgb(166, 168, 197), rgba(195, 228, 229, 0.8));
     filter: blur(80px);
     animation: left 20s infinite;
 }
@@ -87,9 +87,11 @@ nav a.active {
 }
 
 .center-content h1 {
-    font-size: 60px;
-    font-weight: 400;
+    font-family: Goldenbook;
+    font-size: 65px;
+    font-weight: 300;
     margin-top:12%;
+    margin-bottom: 20px;
 }
 
 .center-content {
@@ -101,10 +103,16 @@ nav a.active {
     text-align: center;
   }
 
+.date {
+  font-size: 14px;
+  font-weight: 400;
+  font-style: italic;
+}
+
 .center-content p {
   max-width: 400px;
   font-size: 14px;
-  margin: 10px 0 20px;
+  margin: 20px 0 20px;
   line-height: 1.4;
   text-align: left;
 }
@@ -156,11 +164,11 @@ nav a.active {
 .pagination .current-num {
   font-size: 40px;
   font-weight: 200;
-  margin: 0 10px;
 }
 
 .pagination .total-num {
   font-size: 18px;
+  font-weight: 200;
 }
 
 .scroll {
@@ -170,7 +178,12 @@ nav a.active {
   font-size: 14px;
 }
 
-
+.trail-image {
+  position: absolute;
+  height: 30px;
+  pointer-events: none;
+  opacity: 0;
+}
 
 @keyframes down{
     0%, 100%{

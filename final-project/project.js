@@ -22,6 +22,50 @@ function revealText() {
     });
 }
 
+function revealCurrentNum() {
+    const currentNum = document.querySelector(".current-num");
+    const splitText = new SplitType(currentNum, { types: 'chars' });
+    gsap.set(splitText.chars, { opacity: 0, y: -20 });
+
+    gsap.to(splitText.chars, {
+        opacity: 1,
+        y: 0,
+        duration: 0.8,
+        ease: "power3.out",
+        stagger: 0.05, 
+        onComplete: () => {
+            splitText.revert();
+        }
+    });
+}
+
+function revealDescription() {
+    const description = document.querySelector(".project-description");
+    const date = document.querySelector(".date");
+    gsap.set(description, { opacity: 0, y: -10 });
+    gsap.set(date, { opacity: 0, y: -10 });
+    
+    gsap.to(date, {
+        opacity: 1,
+        y: 0,
+        duration: 0.8,
+        ease: "power3.out",
+        onComplete: () => {
+            description.revert();
+        }
+    });
+
+    gsap.to(description, {
+        opacity: 1,
+        y: 0,
+        duration: 0.8,
+        ease: "power3.out",
+        onComplete: () => {
+            description.revert();
+        }
+    });
+}
+
 let currentProject = 1;
 let isTransitioning = false
 
@@ -35,6 +79,7 @@ function loadProjectContent(projectNumber) {
     isTransitioning = true;
     
     const title = document.querySelector(".project-title");
+    const date = document.querySelector(".date");
     const description = document.querySelector(".project-description");
     const projectIMG = document.querySelector(".project-img");
     const currPage = document.querySelector(".current-num")
@@ -43,7 +88,8 @@ function loadProjectContent(projectNumber) {
     const downSection = document.getElementById("down");
     const leftSection = document.getElementById("left");
     const rightSection = document.getElementById("right");
-    const viewButton = document.querySelector(".view-button a"); // Select the view button link
+    const viewButton = document.querySelector(".view-button a");
+    const trailImages = document.querySelectorAll(".trail-image");
 
     const oldImage = projectIMG.cloneNode(true);
     projectIMG.parentNode.insertBefore(oldImage, projectIMG);
@@ -61,33 +107,42 @@ function loadProjectContent(projectNumber) {
 
           if (projectNumber === 1) {
             title.textContent = "Ripple";
+            date.textContent = "Winter 2024 - Spring 2024";
             description.textContent = "The Ripple App, partnering with the \
             YMCA, is a transformative \
             redesign of a previous mobile application project aimed at \
             empowering youth. This iteration enhances functionality and user \
             engagement, creating a comprehensive platform where young \
             individuals can initiate and participate in community projects, \
-            effectively connecting them with mentors and like-minded peers, \
-            thus fostering a network of proactive changemakers.";
+            effectively connecting them with mentors and like-minded peers.";
             projectIMG.src = "/final-project/Images/ripple.png"; 
-            currPage.innerHTML = "01<span class='total-num'>/03</span>";
+            currPage.innerHTML = "01";
             viewButton.href = "detail1.html";
 
-            background.style.background = "linear-gradient(80deg, rgb(121, 150, 184), rgb(208, 211, 214))";
-            upSection.style.backgroundImage = "linear-gradient(80deg, rgb(106, 141, 155), rgba(82, 94, 101, 0.5))";
-            downSection.style.backgroundImage = "linear-gradient(80deg, rgba(222, 238, 244, 0.8), rgb(90, 99, 140))";
-            leftSection.style.backgroundImage = "linear-gradient(80deg, rgb(139, 142, 172), rgba(195, 228, 229, 0.8))";
+            trailImages[0].src = "../final-project/Trail_Images/p1_1.png";
+            trailImages[1].src = "../final-project/Trail_Images/p1_2.png";
+            trailImages[2].src = "../final-project/Trail_Images/p1_3.png";
+
+            background.style.background = "linear-gradient(80deg, rgb(182, 201, 222), rgb(208, 211, 214))";
+            upSection.style.backgroundImage = "linear-gradient(80deg, rgb(106, 141, 155), rgba(176, 201, 215, 0.5))";
+            downSection.style.backgroundImage = "linear-gradient(80deg, rgba(222, 238, 244, 0.8), rgb(112, 122, 166))";
+            leftSection.style.backgroundImage = "linear-gradient(80deg, rgb(166, 168, 197), rgba(195, 228, 229, 0.8))";
             rightSection.style.backgroundImage = "linear-gradient(80deg, rgba(165, 201, 226, 0.6), rgba(89, 105, 127, 0.5))";
 
           } else if (projectNumber === 2) {
             title.textContent = "CMUCal";
+            date.textContent = "Spring 2024 - Fall 2024";
             description.textContent = "An innovative calendar management system \
             for CMU students that aims to aggregate educational and career \
             resources into a central platform that acts as an extension of \
             students’ personal calendars.";
             projectIMG.src = "/final-project/Images/CMUCal.png"; 
-            currPage.innerHTML = "02<span class='total-num'>/03</span>";
+            currPage.innerHTML = "02";
             viewButton.href = "detail2.html";
+
+            trailImages[0].src = "../final-project/Trail_Images/p2_1.png";
+            trailImages[1].src = "../final-project/Trail_Images/p2_2.png";
+            trailImages[2].src = "../final-project/Trail_Images/p2_3.png";
 
             background.style.background = "linear-gradient(80deg, rgb(186, 181, 189), rgb(197, 192, 207))";
             upSection.style.backgroundImage = "linear-gradient(80deg, rgb(147, 140, 161), rgba(237, 208, 178, 0.5))";
@@ -97,15 +152,20 @@ function loadProjectContent(projectNumber) {
 
           } else if (projectNumber === 3) {
             title.textContent = "Blue Moon Butterfly";
+            date.textContent = "Fall 2023";
             description.textContent = "This project consisted of a series of \
             small graphic forms exploring foundational visual relationships, \
             ultimately leading to a final deliverable that demonstrates my \
             understanding of graphic form language through my given butterfly.";
             projectIMG.src = "/final-project/Images/bluemoon.png"; 
-            currPage.innerHTML = "03<span class='total-num'>/03</span>";
+            currPage.innerHTML = "03";
             viewButton.href = "detail3.html";
 
-            background.style.background = "linear-gradient(80deg, rgb(219, 180, 175), rgb(224, 193, 198))";
+            trailImages[0].src = "../final-project/Trail_Images/p3_1.png";
+            trailImages[1].src = "../final-project/Trail_Images/p3_2.png";
+            trailImages[2].src = "../final-project/Trail_Images/p3_3.png";
+
+            background.style.background = "linear-gradient(80deg, rgb(245, 217, 213), rgb(224, 193, 198))";
             upSection.style.backgroundImage = "linear-gradient(80deg, rgb(227, 199, 157), rgba(255, 120, 120, 0.5))";
             downSection.style.backgroundImage = "linear-gradient(80deg, rgba(255, 240, 200, 0.8), rgb(255, 133, 133))";
             leftSection.style.backgroundImage = "linear-gradient(80deg, rgb(255, 133, 102), rgba(255, 183, 210, 0.8))";
@@ -118,12 +178,18 @@ function loadProjectContent(projectNumber) {
           resetAnimation(rightSection);
 
           revealText();
+          revealCurrentNum();
+          revealDescription()
 
           gsap.fromTo(
             projectIMG,
             { opacity: 0 },
             { opacity: 1, duration: 0.8 }
           );
+
+        //   gsap.fromTo(currPage, 
+        //     { opacity: 0, y: -20 }, 
+        //     { opacity: 1, y: 0, duration: 0.8, ease: "power2.out" });
 
           gsap.to(oldImage, {
             opacity: 0,
@@ -160,8 +226,27 @@ function onSwipe(event) {
         loadProjectContent(currentProject - 1);
     }
 }
-      
+
 window.addEventListener("wheel", onSwipe);
+
+//Respond to keyboard inputs
+document.addEventListener('keydown', (event) => {
+    if (isTransitioning) return;
+    switch (event.key) {
+        case 'ArrowRight': 
+            loadProjectContent(currentProject + 1);
+            break;
+        case 'ArrowLeft': 
+            loadProjectContent(currentProject - 1);
+            break;
+        case 'ArrowUp': 
+            loadProjectContent(currentProject - 1);
+            break;
+        case 'ArrowDown':
+            loadProjectContent(currentProject + 1);
+            break;
+    }
+});
 
 //Detect scroll on mobile devices
 let touchStartY = 0;
