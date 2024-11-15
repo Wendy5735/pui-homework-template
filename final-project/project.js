@@ -115,7 +115,7 @@ function loadProjectContent(projectNumber) {
             engagement, creating a comprehensive platform where young \
             individuals can initiate and participate in community projects, \
             effectively connecting them with mentors and like-minded peers.";
-            projectIMG.src = "/final-project/Images/ripple.png"; 
+            projectIMG.src = "../final-project/Images/ripple.png"; 
             currPage.innerHTML = "01";
             viewButton.href = "detail1.html";
 
@@ -136,7 +136,7 @@ function loadProjectContent(projectNumber) {
             for CMU students that aims to aggregate educational and career \
             resources into a central platform that acts as an extension of \
             students’ personal calendars.";
-            projectIMG.src = "/final-project/Images/CMUCal.png"; 
+            projectIMG.src = "../final-project/Images/CMUCal.png"; 
             currPage.innerHTML = "02";
             viewButton.href = "detail2.html";
 
@@ -157,7 +157,7 @@ function loadProjectContent(projectNumber) {
             small graphic forms exploring foundational visual relationships, \
             ultimately leading to a final deliverable that demonstrates my \
             understanding of graphic form language through my given butterfly.";
-            projectIMG.src = "/final-project/Images/bluemoon.png"; 
+            projectIMG.src = "../final-project/Images/bluemoon.png"; 
             currPage.innerHTML = "03";
             viewButton.href = "detail3.html";
 
