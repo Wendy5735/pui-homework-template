@@ -96,7 +96,6 @@ body {
     border: 1px solid #000000;
     display: block;
     transition: transform 0.3s ease, filter 0.3s ease, z-index 0.3s ease;
-
 }
 
 .project-link:nth-child(1) .project-card {
@@ -216,5 +215,56 @@ body {
     }
     70%{
         right: 1300px;
+    }
+}
+
+
+/* General Mobile Layout */
+@media (max-width: 768px) {
+    .profile-container {
+        margin: 40px 10% 0 10%;
+        overflow-x: hidden; 
+    }
+    
+    .profile-image {
+    width: 200px;
+    }
+
+    .intro-section {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-bottom: 60px;
+    }
+
+    .experience-section {
+        flex-direction: column;
+        gap: 30px;
+        margin-bottom: 70px;
+    }
+
+    .description-popup {
+        width: 85%;
+    }
+
+    .projects-section {
+        gap: 30px;
+        flex-direction: column;
+        margin-bottom: 450px;
+    }
+
+    .project-card {
+        width: 210px;
+        height: 140px;
+    }
+
+    .project-link:nth-child(2) .project-card {
+        top: 110px; 
+        left: 50px;
+    }
+    
+    .project-link:nth-child(3) .project-card {
+        top: 220px;
+        left: 100px;
     }
 }

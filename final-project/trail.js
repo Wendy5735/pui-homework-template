@@ -40,13 +40,13 @@ document.addEventListener('mousemove', (e) => {
         // On the first movement, position the images at the cursor
         gsap.set(img, {
           x: cursorX - img.offsetWidth / 2, 
-          y: cursorY - img.offsetHeight / 2 - 630, 
+          y: cursorY - img.offsetHeight / 2 -630, 
         });
       }
 
     gsap.to(img, {
       x: cursorX - img.offsetWidth / 2, 
-      y: cursorY - img.offsetHeight / 2 - 630, 
+      y: cursorY - img.offsetHeight / 2 -630, 
       delay: index * 0.5, 
       duration: 1,
       ease: "power2.out",

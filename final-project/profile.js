@@ -14,7 +14,7 @@ gsap.utils.toArray(".project-card").forEach((card, index) => {
             ease: "power3.out",
             scrollTrigger: {
                 trigger: card,
-                start: "top 70%",
+                start: window.innerWidth <= 768 ? "top 85%" : "top 70%",
                 end: "top 70%",
                 toggleActions: "play none none reverse",
             },

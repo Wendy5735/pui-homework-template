@@ -217,3 +217,73 @@ nav a.active {
         right: 1300px;
     }
 }
+
+
+/* General Mobile Layout */
+@media (max-width: 768px) {
+
+  header {
+    padding: 20px 30px;
+  }
+
+  header .logo {
+    font-size: 28px; 
+    margin-bottom: 10px;
+  }
+
+  header nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  header nav a {
+    margin-top: 5px;
+    font-size: 14px;
+  }
+
+  .center-content {
+    padding: 0 30px; /* Add padding for smaller screens */
+  }
+
+  .center-content h1 {
+    font-size: 45px; /* Adjust project title font size */
+  }
+
+  .view-button {
+    margin-top: 10px;
+  }
+
+  .circle-img {
+    position: relative;
+    width: 200px; 
+    height: 200px;
+    left: 50%;
+    margin-top: 10%;
+    transform: translateX(-50%);
+  }
+
+  .pagination {
+    bottom: 5%; /* Adjust pagination position */
+    right: 10%; /* Ensure it stays visible */
+  }
+
+  .pagination img {
+      width: 40px; /* Smaller pagination arrows */
+  }
+
+  .pagination .current-num {
+      font-size: 30px; /* Adjust font size */
+  }
+
+  .pagination .total-num {
+      font-size: 14px;
+  }
+
+  .scroll {
+      font-size: 12px; 
+      bottom: 6%;
+      left: 10%;
+  }
+}

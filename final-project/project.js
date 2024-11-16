@@ -49,20 +49,14 @@ function revealDescription() {
         opacity: 1,
         y: 0,
         duration: 0.8,
-        ease: "power3.out",
-        onComplete: () => {
-            description.revert();
-        }
+        ease: "power3.out"
     });
 
     gsap.to(description, {
         opacity: 1,
         y: 0,
         duration: 0.8,
-        ease: "power3.out",
-        onComplete: () => {
-            description.revert();
-        }
+        ease: "power3.out"
     });
 }
 
@@ -151,7 +145,7 @@ function loadProjectContent(projectNumber) {
             rightSection.style.backgroundImage = "linear-gradient(80deg, rgba(137, 128, 156, 0.6), rgba(177, 172, 189, 0.5))";
 
           } else if (projectNumber === 3) {
-            title.textContent = "Blue Moon Butterfly";
+            title.textContent = "Blue Moon";
             date.textContent = "Fall 2023";
             description.textContent = "This project consisted of a series of \
             small graphic forms exploring foundational visual relationships, \
@@ -266,12 +260,14 @@ window.addEventListener("touchend", (e) => {
 //Detect clicking on arrows
 document.querySelector(".leftArrow").addEventListener("click", () => {
     if (!isTransitioning) {
+        console.log('clicked on left arrow');
         loadProjectContent(currentProject - 1);
     }
 });
 
 document.querySelector(".rightArrow").addEventListener("click", () => {
     if (!isTransitioning) {
+        console.log('clicked on right arrow');
         loadProjectContent(currentProject + 1);
     }
 });
