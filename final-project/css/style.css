@@ -12,7 +12,8 @@ body {
   height: 100vh;
   width: 100%;
   z-index: -1;   
-  background: linear-gradient(80deg, rgb(182, 201, 222), rgb(208, 211, 214));
+  background: linear-gradient(80deg, rgb(182, 201, 222),
+     rgb(208, 211, 214));
 }
 
 .project-page {
@@ -21,12 +22,14 @@ body {
   z-index: 900;
 }
 
+/* Four Moving Gradients */
 #up{
     position: absolute;
     height: 800px;
     width: 800px;
     border-radius: 50%;
-    background-image: linear-gradient(80deg, rgb(106, 141, 155), rgba(176, 201, 215, 0.5));
+    background-image: linear-gradient(80deg, rgb(106, 141, 155),
+       rgba(176, 201, 215, 0.5));
     filter: blur(80px);
     animation: down 30s infinite;
 }
@@ -37,7 +40,8 @@ body {
     height: 500px;
     width: 500px;
     border-radius: 50%;
-    background-image: linear-gradient(80deg, rgba(222, 238, 244, 0.8), rgb(112, 122, 166));
+    background-image: linear-gradient(80deg, rgba(222, 238, 244, 0.8),
+       rgb(112, 122, 166));
     filter: blur(80px);
     animation: up 20s infinite;
 }
@@ -47,7 +51,8 @@ body {
     height: 500px;
     width: 500px;
     border-radius: 50%;
-    background-image: linear-gradient(80deg, rgb(166, 168, 197), rgba(195, 228, 229, 0.8));
+    background-image: linear-gradient(80deg, rgb(166, 168, 197),
+       rgba(195, 228, 229, 0.8));
     filter: blur(80px);
     animation: left 20s infinite;
 }
@@ -57,7 +62,8 @@ body {
     height: 500px;
     width: 500px;
     border-radius: 50%;
-    background-image: linear-gradient(80deg, rgba(165, 201, 226, 0.6), rgba(89, 105, 127, 0.5));
+    background-image: linear-gradient(80deg, rgba(165, 201, 226, 0.6),
+       rgba(89, 105, 127, 0.5));
     filter: blur(80px);
     animation: right 30s infinite;
 }
@@ -185,6 +191,7 @@ nav a.active {
   opacity: 0;
 }
 
+/* Animation for the four gradients */
 @keyframes down{
     0%, 100%{
         top: -100px;
@@ -244,11 +251,11 @@ nav a.active {
   }
 
   .center-content {
-    padding: 0 30px; /* Add padding for smaller screens */
+    padding: 0 30px;
   }
 
   .center-content h1 {
-    font-size: 45px; /* Adjust project title font size */
+    font-size: 45px; 
   }
 
   .view-button {
@@ -265,16 +272,16 @@ nav a.active {
   }
 
   .pagination {
-    bottom: 5%; /* Adjust pagination position */
-    right: 10%; /* Ensure it stays visible */
+    bottom: 5%; 
+    right: 10%; 
   }
 
   .pagination img {
-      width: 40px; /* Smaller pagination arrows */
+      width: 40px; 
   }
 
   .pagination .current-num {
-      font-size: 30px; /* Adjust font size */
+      font-size: 30px; 
   }
 
   .pagination .total-num {

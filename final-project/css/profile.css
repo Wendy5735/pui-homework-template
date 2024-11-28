@@ -113,7 +113,7 @@ body {
     left: 220px;
 }
 
-.project-card img {
+.projects-cards .project-card img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -127,7 +127,7 @@ body {
     right: 10px;
 }
 
-.projects-cards .project-card:hover {
+.projects-section .projects-cards .project-card:hover {
     z-index: 10; /* Bring hovered card to the front */
     transform: scale(1.05) !important; /* Slightly enlarge the card */
 }
@@ -142,11 +142,13 @@ body {
     opacity: 0.6;
 }
 
+/* Gradients in the background */
 #up{
     height: 500px;
     width: 500px;
     border-radius: 50%;
-    background-image: linear-gradient(80deg, rgb(106, 141, 155), rgba(176, 201, 215, 0.5));
+    background-image: linear-gradient(80deg, rgb(106, 141, 155),
+         rgba(176, 201, 215, 0.5));
     filter: blur(80px);
     animation: down 30s infinite;
 }
@@ -158,7 +160,8 @@ body {
     height: 500px;
     width: 500px;
     border-radius: 50%;
-    background-image: linear-gradient(80deg, rgba(222, 238, 244, 0.8), rgb(112, 122, 166));
+    background-image: linear-gradient(80deg, rgba(222, 238, 244, 0.8), 
+        rgb(112, 122, 166));
     filter: blur(80px);
     animation: up 20s infinite;
 }
@@ -168,7 +171,8 @@ body {
     height: 500px;
     width: 500px;
     border-radius: 50%;
-    background-image: linear-gradient(80deg, rgb(166, 168, 197), rgba(195, 228, 229, 0.8));
+    background-image: linear-gradient(80deg, rgb(166, 168, 197),
+         rgba(195, 228, 229, 0.8));
     filter: blur(80px);
     animation: left 20s infinite;
 }
@@ -178,13 +182,14 @@ body {
     height: 500px;
     width: 500px;
     border-radius: 50%;
-    background-image: linear-gradient(80deg, rgba(165, 201, 226, 0.6), rgba(89, 105, 127, 0.5));
+    background-image: linear-gradient(80deg, rgba(165, 201, 226, 0.6),
+         rgba(89, 105, 127, 0.5));
     filter: blur(80px);
     animation: right 30s infinite;
 }
 
 
-
+/* Animating the gradients */
 @keyframes down{
     0%, 100%{
         top: -100px;

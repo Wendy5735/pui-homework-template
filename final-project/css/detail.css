@@ -50,7 +50,7 @@
 
 .blue-text {
     font-size: 14px;
-    color: rgb(81, 127, 154);
+    color: rgb(58, 91, 110);
     font-weight: 500;
 }
 
@@ -70,6 +70,7 @@
     font-weight: 400;
 }
 
+/* The left section is unscrollable */
 .fixed-info {
     width: 300px;
     position: sticky;
@@ -89,7 +90,7 @@
 
 .fixed-info .title {
     font-size: 14px;
-    color: rgb(81, 127, 154); 
+    color: rgb(58, 91, 110);
     margin: 0;
 }
 
