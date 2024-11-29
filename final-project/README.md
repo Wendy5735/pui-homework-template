@@ -4,35 +4,51 @@
 
 Describe your website (300 words).
 
-* What is the purpose of your website?   
-* Who is the target audience?  
-* What information do you convey with your website?   
-* How is it interesting and engaging? 
+The purpose of my website is to serve as a personal portfolio, showcasing my design projects, skills, and professional experiences in an interactive and visually compelling format. Beyond being a digital resume, the site is a storytelling platform that reflects my personality and technical expertise while leaving a lasting impression on its visitors.
+
+The target audience for this website includes recruiters, hiring managers, and professionals in the fields of design and HCI, as well as potential collaborators and fellow designers.
+
+My portfolio highlights a selection of my main projects with important details, visuals, and complete processes. The visuals and key ideas for each project are prominently displayed on the main page, while each project’s detail page delves deeper into its process, providing viewers with a clear understanding of my design approach. Additionally, the site includes my personal information and professional experiences, offering a comprehensive perspective on my role as a designer.
+
+To engage the audience, the website features an animated gradient background project page as the home page to draw attention. It also incorporates various interactive elements and animations. For example, scroll-triggered animations and transitions enhance the storytelling experience, while cursor trails add a playful and engaging touch. These elements are carefully balanced to avoid overwhelming the user or distracting from the main content.
+
+Overall, the website is designed to captivate and inform, presenting my work in a way that emphasizes both creativity and usability.
 
 ## Part 2: User Interaction
 
 How a user would interact with your website? For each step, briefly but clearly state the interaction type & how we should reproduce it.
 
-1. Interaction type. Click on X on page Y / scroll on page X, etc.  
-2. 
+-  Responsive Website: (1) Any desktop screen size (such as 1440 x 900).
+(2) Mobile screen size: 390 x 844.
+1. Navigating Between Projects: Navigate between the main project page using the left, up, right, and down arrow keys, swiping (on touch devices), or by clicking the left and right arrows at the bottom-right corner of the page. Each navigation triggers transition animations, such as project title text appearing letter by letter and background gradients transitioning colors.
+2. Trailing Cursor: Move the cursor around on the home page to see the trailing cursor effect following the cursor. The trail dynamically displays the categories of the project, such as "UI/UX Design," or "Print Design". 
+3. Enter the Project Detail Page: Click the "VIEW" button on the home page for a specific project. It leads the user to a detailed page about the selected project. On this page, users can scroll through visuals, read detailed descriptions, and explore the design process.
+4. Returning to the Home Page: Click the back arrow on the project detail page to return to the home page.  
+5. Viewing the Profile Page: Click on "About" in the top-right navigation bar to access the profile page.
+6. Exploring Detailed Experience on the Profile Page: Hover over different experiences in the "Experience" section to reveal a gray block with additional details about each experience
+7. Viewing Project Cards on the Profile Page: Scroll down to see project cards fade in one by one. Hovering over a card brings it to the front, enlarges it, and subtly grays out the surrounding cards, creating a focus on the hovered card. Click on one card leads to its project detail page.
+
 
 ## Part 3: External Tool
 
 Describe what important external tool you used (JavaScript library, Web API, animations, or other). Following the bulleted list format below, reply to each of the prompts.
 
-1. Name of tool1  
-   * Why did you choose to use it over other alternatives? (2 sentences max)  
-   * How you used it? (2 sentences max)  
-   * What does it add to your website? (2 sentences max)  
-2. Name of tool2
+1. GSAP 
+   * Why did you choose to use it over other alternatives? (2 sentences max) -- I chose GSAP because of its powerful animation capabilities and ease of use compared to other libraries. 
+   * How you used it? (2 sentences max) -- I used GSAP for scroll-triggered animations, project transitions, and interactive effects such as text reveals, image fade-ins, and cursor trails.
+   * What does it add to your website? (2 sentences max) -- GSAP enhances my website's interactivity a lot by enabling fluid animations that improve user engagement. 
 
 ## Part 4: Design Iteration
 
 Describe how you iterated on your prototypes, if at all, including any changes you made to your original design while you were implementing your website and the rationale for the changes. (4-8 sentences max)
 
+I closely followed my initial design structure but focused my iterations primarily on enhancing accessibility and cohesion. During lab sessions, I received feedback on accessibility, such as making the gradient background lighter to improve the readability of black text. Based on this feedback, I adjusted the design to ensure better contrast and visibility across all sections of the site. Additionally, I iterated to make the website more cohesive by extending the gradient background to the profile page, unifying its visual language with the project pages. These iterations were driven by the goal of improving user experience while maintaining a consistent and engaging aesthetic throughout the site.
+
 ## Part 5: Implementation Challenge
 
 What challenges did you experience in implementing your website? (2-4 sentences max)
+
+One of the challenges was trying to use the GSAP library. The examples posted online were sometimes lengthy, complicated, and didn’t directly apply to my situation, so I had to adapt and simplify them to fit my specific use case.
 
 ## Part 6: Generative AI Use and Reflection
 
@@ -50,49 +66,71 @@ For the following aspects of your project, edit the corresponding table cell to 
 
 | Tool Name | Ratings | design | plan | write code | debug | \_ (other?) |
 | :---- | :---- | :---- | :---- | :---- | :---- | :---- |
-| Tool1 | Usage | Yes/No | Yes/No | Yes/No | Yes/No | Yes/No |
-| Tool1 | Productivity | 1~7 | 1~7 | 1~7 | 1~7 | 1~7 |
-| Tool2| Usage | Yes/No | Yes/No | Yes/No | Yes/No | Yes/No |
-| Tool2 | Productivity | 1~7 | 1~7 | 1~7 | 1~7 | 1~7 |
+| ChatGPT | Usage | No | No | Yes | Yes | No |
+| ChatGPT | Productivity | N/A | N/A | 6 | 6 | N/A |
 
 
 ### Usage Reflection
 
 > Impact on your design and plan 
-* It matched my expectations and plan in [FP2](#generative-ai-use-plan) in that … For example, 
-  1. Tool1: 
-  2. Tool2:
-* It did not match my expectations and plan in [FP2](#generative-ai-use-plan) in that … For example, 
-  1. Tool1: 
-  2. Tool2:
-* GenAI tool did/did not influence my final design and implementation plan because … For example, 
-  1. Tool1: 
-  2. Tool2:
+* It matched my expectations and plan in [FP2](#generative-ai-use-plan) in that it provided a lot of help in explaining library concepts and debugging. For example, 
+  1. ChatGPT: ChatGPT matched my expectations and plan in FP2 in that it was very effective in providing coding assistance and debugging support. For example, when implementing GSAP animations, ChatGPT helped me better understand and simplify the examples I found online and adapt them to my specific use case. 
+
+
+* It did not match my expectations and plan in [FP2](#generative-ai-use-plan) in that it was less effective in debugging. For example, 
+  1. ChatGPT: It did not match my expectations and plan in FP2 in that it provided limited support for debugging due to the complexity of inputting large amounts of code and providing detailed context for each issue. As a result, I had to handle most debugging tasks myself.
+
+* GenAI tool did influence my final implementation plan by making the process quicker, but it did not influence the design because I wanted to rely more on my own iteration and user feedback. For example, 
+  1. ChatGPT: I think GenAI tools did influence my final design and implementation plan because they streamlined my coding and debugging process, allowing me to finish the things quicker than I thought, and focus more on refining the user experience and visual details. However, it did not directly shape the creative or strategic aspects of the design, as those relied more on user feedback and personal iteration.
 
 > Use patterns
-* I accepted the generations when …  For example, 
-  1. Tool1: this tool once suggested … and I adjusted my design according to the suggestion because … 
-  2. Tool2: 
-* I critiqued/evaluated the generated suggestions by … For example, 
-  1. Tool1: this tool once suggested … but I modified/rejected the suggestion because … 
-  2. Tool2: 
+* I accepted the generations when they matched my design goals and provided efficient solutions to implementation challenges. For example, 
+  1. ChatGPT: once suggested optimizing GSAP animations by grouping transitions into a single ScrollTrigger instance for better performance and smoother effects. I adjusted my design according to the suggestion because it reduced the complexity of managing multiple animation triggers while maintaining the desired visual flow.
+* I critiqued/evaluated the generated suggestions by comparing them against my initial design vision, user experience priorities, and technical feasibility. For example, 
+  1. ChatGPT once suggested using a  CSS grid layout to manage the placement of project cards. However, I modified/rejected the suggestion because it required more adjustments than using a simpler flexbox approach, which is something we have learned in class. 
 
 
 > Pros and cons of using GenAI tools
 * Pros
-  1. Tool1: 
-  2. Tool2:
+  1. ChatGPT: First, it is very efficient. ChatGPT helped streamline problem-solving, such as suggesting quick solutions for animation effects and layout adjustments, which saved significant time during implementation. Moreover, it explained complex JavaScript libraries like GSAP and provided clear examples, which enhanced my understanding and application of the tool.
+
 * Cons
-  1. Tool1: 
-  2. Tool2:
+  1. ChatGPT: The tool sometimes required extensive context to provide accurate solutions, which made debugging lengthy or complex code challenging. Alo, suggestions occasionally included overly generalized or unsuitable examples, which required me to adapt or discard them for my project.
 
 
 ### Usage Log
 
 Document the usage logs (prompts and chat history links) for the GenAI tools you used. Some tools may not have an easy way to share usage logs, just try your best! Some instructions for different tools:
 
-1. [ChatGPT](https://help.openai.com/en/articles/7925741-chatgpt-shared-links-faq) / [Gemini](https://support.google.com/gemini/answer/13743730?hl=en&co=GENIE.Platform%3DDesktop): share the anonymous link to all of your chat histories relevant to this project
-2. [GitHub Copilot (VSCode)](https://code.visualstudio.com/docs/copilot/copilot-chat#:~:text=You%20can%20export%20all%20prompts%20and%20responses%20for%20a%20chat%20session%20in%20a%20JSON%20file%20with%20the%20Chat%3A%20Export%20Session...%20command%20(workbench.action.chat.export)%20in%20the%20Command%20Palette.): export chat histories relevant to this project.
+1. ChatGPT prompts (not comprehensive)
+
+"Right now, the blur effect just blurs, it did not blend with the next background. The transition between the previous and next background is still abrupt. I want the colors to blur and mix; how can I achieve that?"
+
+"power3.out vs power2.out in gsap."
+
+"How to let the effect to happen only if I swipe fast enough or long enough"
+
+"How to make a card to come to the front (not stacked) when I hover on it and make the other cards grayed out."
+
+"for the hovering and enlarge the card effect, why it only works if i add "!important"."
+
+"For some reason, I cannot scroll this page. Is it because I put style.css and profile.css into this HTML, and in style.css it has overflow: hidden;?"
+
+## Part 7: Appendix: Accessibility
+### Home Project Page
+![Home Page WAVE](Images/Home-WAVE.png)
+
+### Project 1 Detail Page
+![Project Detail 1 Page WAVE](Images/P1-WAVE.png)
+
+### Project 2 Detail Page
+![Project Detail 2 Page WAVE](Images/P2-WAVE.png)
+
+### Project 3 Detail Page
+![Project Detail 3 Page WAVE](Images/P3-WAVE.png)
+
+### Profile Page
+![Profile Page WAVE](Images/Profile-WAVE.png)
 
 ---
 

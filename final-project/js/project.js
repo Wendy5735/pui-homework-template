@@ -86,7 +86,6 @@ function loadProjectContent(projectNumber) {
         filter: "blur(15px)", 
         duration: 0.5,
         onComplete: () => {
-          console.log(projectNumber);
           if (projectNumber > 3) projectNumber = 1;
           if (projectNumber < 1) projectNumber = 3;
 
@@ -266,14 +265,12 @@ window.addEventListener("touchend", (e) => {
 //Detect clicking on arrows
 document.querySelector(".leftArrow").addEventListener("click", () => {
     if (!isTransitioning) {
-        console.log('clicked on left arrow');
         loadProjectContent(currentProject - 1);
     }
 });
 
 document.querySelector(".rightArrow").addEventListener("click", () => {
     if (!isTransitioning) {
-        console.log('clicked on right arrow');
         loadProjectContent(currentProject + 1);
     }
 });
