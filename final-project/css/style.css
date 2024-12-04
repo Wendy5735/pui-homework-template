@@ -117,7 +117,7 @@ nav a.active {
 
 .center-content p {
   max-width: 400px;
-  font-size: 14px;
+  font-size: 15px;
   margin: 20px 0 20px;
   line-height: 1.4;
   text-align: left;
@@ -256,6 +256,10 @@ nav a.active {
 
   .center-content h1 {
     font-size: 45px; 
+  }
+
+  .center-content p {
+    font-size: 14px;
   }
 
   .view-button {

@@ -42,7 +42,7 @@ Describe what important external tool you used (JavaScript library, Web API, ani
 
 Describe how you iterated on your prototypes, if at all, including any changes you made to your original design while you were implementing your website and the rationale for the changes. (4-8 sentences max)
 
-I closely followed my initial design structure but focused my iterations primarily on enhancing accessibility and cohesion. During lab sessions, I received feedback on accessibility, such as making the gradient background lighter to improve the readability of black text. Based on this feedback, I adjusted the design to ensure better contrast and visibility across all sections of the site. Additionally, I iterated to make the website more cohesive by extending the gradient background to the profile page, unifying its visual language with the project pages. These iterations were driven by the goal of improving user experience while maintaining a consistent and engaging aesthetic throughout the site.
+I closely followed my initial design structure but focused my iterations primarily on enhancing accessibility and cohesion. During lab sessions, I received feedback on accessibility, such as making the gradient background lighter to improve the readability of black text, and increasing the font size. Based on this feedback, I adjusted the design to ensure better contrast and visibility across all sections of the site. Additionally, I iterated to make the website more cohesive by extending the gradient background to the profile page, unifying its visual language with the project pages. These iterations were driven by the goal of improving user experience while maintaining a consistent and engaging aesthetic throughout the site.
 
 ## Part 5: Implementation Challenge
 
