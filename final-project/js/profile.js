@@ -1,5 +1,3 @@
-gsap.registerPlugin(ScrollTrigger);
-
 //Fade in and out each card as the user scrolls down and up
 gsap.utils.toArray(".project-card").forEach((card, index) => {
     gsap.fromTo(
